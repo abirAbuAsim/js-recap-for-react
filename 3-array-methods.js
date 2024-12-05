@@ -7,10 +7,26 @@ const products = [
 ];
 
 // 1. map
+// returns a new array
+const brands = products.map(product => product.brand);
+// console.log(brands);
+
+const prices = products.map(product => product.price);
+// console.log(prices);
 
 // 2. forEach
+products.forEach(product => {
+    // console.log(product);
+});
 
 // 3. filter
+const sostaProducts = products.filter(product => product.price <= 4000);
+console.log(sostaProducts);
+
+const specificNames = products.filter(product => product.name.includes('n'));
+console.log(specificNames);
 
 //4. find
+const firstFoundItem = products.find(product => product.name.includes('n'));
+console.log(firstFoundItem); 
 
